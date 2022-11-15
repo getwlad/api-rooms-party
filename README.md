@@ -8,11 +8,13 @@
 ## Sobre o projeto
 
 Você pode conferir este projeto rodando em: [Rooms-party-api](https://room-api-party.herokuapp.com/) \
-Também pode conferir um projeto fazendo uso desta api em:  [Rooms-party](https://rooms-party.vercel.app/)
+Também pode conferir um projeto fazendo uso desta api em:  [Rooms-party](https://rooms-party.vercel.app/) Código Fonte: [Rooms-party](https://github.com/getwlad/rooms-party)
 
 ## Instalação
 
 Utilize o api-rooms-party localmente com o npm.
+
+**Para uso destes comandos é necessário ter o Node JS e Git instalados**
 
 ```bash
   # Faça o download do código pelo terminal:
