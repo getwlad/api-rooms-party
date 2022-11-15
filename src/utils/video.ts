@@ -20,11 +20,11 @@ class Video {
     return this.videos.filter((video) => video.room === room)[0];
   }
 
-  removevideo(id: string) {
-    let video = this.getVideo(id);
+  removeVideo(room: string) {
+    let video = this.getVideo(room);
 
     if (video) {
-      this.videos = this.videos.filter((video) => video.id !== id);
+      this.videos = this.videos.filter((video) => video.room !== room);
     }
 
     return video;
