@@ -69,7 +69,9 @@ io.on("connection", (socket: any) => {
     //Comunica a todos da sala a mensagem que o usuário enviou
     socket.to(data.room).emit("receive_message", data);
   });
-
+  socket.on("played_video", (data: any) => {
+    socket.to(data.room).emit("updateVideoTime", data.time);
+  });
   //Quando um usuário definir um video
   socket.on("set_video", (data: any) => {
     //Emite um cominucado a todos do id do video a ser definido
