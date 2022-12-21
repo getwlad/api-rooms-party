@@ -37,7 +37,7 @@ const server = http.createServer(app);
 //Instanciando servidor do socket io
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
@@ -99,6 +99,6 @@ io.on("connection", (socket: any) => {
 });
 
 //Executa o servidor na porta a ser definida no .env ou utiliza a 3001 caso não esteja definida
-server.listen(process.env.PORT || 3001, () => {
+server.listen(process.env.API_PORT || process.env.PORT || 3001, () => {
   console.log("Running");
 });
